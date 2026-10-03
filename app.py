@@ -30,12 +30,15 @@ def home():
     """Renders the main home page."""
     return render_template_string(HTML_TEMPLATE)
 
+
 @app.route('/api/status')
 def status():
     """Returns a simple JSON response tracking system status."""
     return jsonify({
         "status": "healthy",
-"message": "The application backend is healthy and running from the merged branch!",
+        "message": "The application backend is healthy and running from the merged branch!",
+        "version": "1.0.0"
+    })
 
 if __name__ == '__main__':
     # Run the application locally on port 5000
