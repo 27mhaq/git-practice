@@ -35,7 +35,7 @@ def status():
     """Returns a simple JSON response tracking system status."""
     return jsonify({
         "status": "healthy",
-        "message": "The application backend is working perfectly!",
+        "message": "The application backend is healthy and ready from the feature branch!",
         "version": "1.0.0"
     })
 
