@@ -35,9 +35,9 @@ def status():
     """Returns a simple JSON response tracking system status."""
     return jsonify({
         "status": "healthy",
-        "message": "The application backend is healthy and ready from the feature branch!",
-        "version": "1.0.0"
-    })
+"message": "The application backend is healthy and running from the merged branch!",git add app.py
+git commit -m "Resolve merge conflict between main and feature branch"
+git push
 
 if __name__ == '__main__':
     # Run the application locally on port 5000
